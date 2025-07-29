@@ -1,15 +1,15 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { AlignJustify } from "lucide-react"
+import { MenuIcon } from "lucide-react"
 import Image from "next/image"
 
 const Header = () => {
   return (
-    <Card className="rounded-none p-6">
+    <Card className="rounded-none">
       <CardContent className="flex items-center justify-between">
-        <Image src="logo.svg" width={120} height={18} alt="Logo FswBarber" />
-        <Button size="icon" variant="outline" className="border-0 bg-none p-0">
-          <AlignJustify />
+        <Image src="/logo.svg" width={130} height={100} alt="Logo FSW" />
+        <Button size="icon" variant="ghost">
+          <MenuIcon />
         </Button>
       </CardContent>
     </Card>
