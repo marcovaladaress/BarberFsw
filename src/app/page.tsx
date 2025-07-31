@@ -17,13 +17,15 @@ const Home = async () => {
     <div>
       <Header />
       <div className="p-5">
-        <h2 className="text-xl font-bold">Olá, Marco!</h2>
-        <p>Segunda-feira, 28 de julho</p>
-        <div className="mt-6 flex items-center gap-2">
-          <Input placeholder="Faça sua busca..." />
-          <Button size="icon">
-            <SearchIcon />
-          </Button>
+        <div>
+          <h2 className="text-xl font-bold">Olá, Marco!</h2>
+          <p>Segunda-feira, 28 de julho</p>
+          <div className="mt-6 flex items-center gap-2">
+            <Input placeholder="Faça sua busca..." />
+            <Button size="icon">
+              <SearchIcon />
+            </Button>
+          </div>
         </div>
 
         <div className="mt-6 flex gap-2 overflow-auto [&::-webkit-scrollbar]:hidden">
@@ -74,6 +76,7 @@ const Home = async () => {
           ))}
         </div>
       </div>
+
       <footer>
         <Card className="rounded-none">
           <CardContent className="text-xs font-bold text-slate-400">

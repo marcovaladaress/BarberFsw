@@ -4,14 +4,15 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Barbershop } from "@prisma/client"
 import { StarIcon } from "lucide-react"
 import Image from "next/image"
+import Link from "next/link"
 
 interface BarberShopItemProps {
   barbershop: Barbershop
 }
 
-const BarberShopItem = ({ barbershop }: BarberShopItemProps) => {
+const BarberShopItem = async ({ barbershop }: BarberShopItemProps) => {
   return (
-    <Card className="min-w-[167px] rounded-2xl p-0 pb-2">
+    <Card className="flex min-w-[167px] flex-col rounded-2xl p-0 pb-2">
       <CardContent className="p-0">
         <div className="relative h-[159px] w-full">
           <Image
@@ -31,8 +32,8 @@ const BarberShopItem = ({ barbershop }: BarberShopItemProps) => {
         <div className="px-2 py-3">
           <h3 className="truncate font-semibold">{barbershop.name}</h3>
           <p className="truncate text-sm text-gray-400">{barbershop.address}</p>
-          <Button className="mt-3 w-full" variant="secondary">
-            Resevar
+          <Button className="mt-3 w-full" variant="secondary" asChild>
+            <Link href={`/barbershops/${barbershop.id}`}>Reservar</Link>
           </Button>
         </div>
       </CardContent>
