@@ -1,36 +1,29 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# BarberFsw
 
-## Getting Started
+Aplicação de agendamento para barbearias, desenvolvida acompanhando as aulas do curso **Full Stack Club**, para praticar Next.js com Prisma e PostgreSQL.
 
-First, run the development server:
+## O que está implementado
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Modelagem do banco com Prisma e PostgreSQL: usuários, barbearias, serviços e agendamentos
+- Seed do banco com dados de exemplo
+- Página inicial com lista de barbearias e página de detalhes de cada barbearia
+- Componente de exibição de agendamentos
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Qualidade de código
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+ESLint, Prettier, Husky e lint-staged rodando antes de cada commit.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Stack
 
-## Learn More
+Next.js · TypeScript · Prisma · PostgreSQL · Tailwind CSS · shadcn/ui
 
-To learn more about Next.js, take a look at the following resources:
+## Como rodar
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. `npm install`
+2. Crie um arquivo `.env` com `DATABASE_URL` apontando para um banco PostgreSQL
+3. `npx prisma migrate dev`
+4. `npm run dev`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Desenvolvido por [Marco Valadares](https://github.com/marcovaladaress)
