@@ -11,7 +11,7 @@ Aplicação de agendamento para barbearias, desenvolvida acompanhando as aulas d
 
 ## Qualidade de código
 
-ESLint, Prettier, Husky e lint-staged rodando antes de cada commit.
+ESLint, Prettier
 
 ## Stack
 
